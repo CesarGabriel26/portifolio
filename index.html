@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navegacao">
+            <ul class="menu">
+                <li>
+                    <a href="#inicio" class="menu-link">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="menu-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projetos" class="menu-link">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato" class="menu-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio" class="cabecalho">
+
+        <img class="foto-pefil" src="./imgs/image.png" alt="Foto Cesar Gaberiel">
+        <h1>Cesar Gabriel</h1>
+        <p class="sub-titulo">Técnico em Análise e Desenvolvimento de Sistemas</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou Técnico em Análise e Desenvolvimento de Sistemas. Atuo como desenvolvedor, com foco em soluções criativas e funcionais, tanto para aplicações
+                web quanto mobile, jogos e automação.
+                <br><br>
+                Tenho domínio em linguagens como Go, JavaScript, C# e Python, além de sólidos conhecimentos em HTML,
+                CSS e JavaScript puro. Trabalho com frameworks modernos como React, Node.js e React Native (Expo) para
+                criar interfaces responsivas e aplicações completas.
+                <br><br>
+                No desenvolvimento de jogos, utilizo as engines Godot e Unity, explorando tanto o design quanto a lógica
+                de sistemas complexos. Também tenho experiência com projetos de automação e IoT, utilizando Arduino e
+                ESP para integrar hardware e software.
+                <br><br>
+                Sou apaixonado por resolver problemas e aprender continuamente. Estou sempre buscando novos desafios
+                para aplicar e expandir minhas habilidades como desenvolvedor.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./imgs/vozurbana.png"
+                    alt="Projeto 1" class="projetos-imagem">
+                <div class="textos-projeto">
+                    <h3 class="projetos-info">Voz Urbana</h3>
+                    <p class="projetos-descricao">
+                        Aplicativo e Plataforma Web para Conexão Cívica da População
+
+                        Projeto de desenvolvimento de um aplicativo móvel e uma página web com o objetivo de conectar os
+                        cidadãos de uma cidade, estado ou país, permitindo que relatem problemas locais, proponham
+                        melhorias
+                        e iniciem petições ou abaixo-assinados. A plataforma visa fortalecer a participação popular na
+                        gestão pública, promovendo transparência, engajamento cívico e colaboração entre a população e
+                        os
+                        órgãos responsáveis pela administração da região.
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+                    alt="Projeto 1" class="projetos-imagem">
+                <div class="textos-projeto">
+                    <h3 class="projetos-info">Safe Guard Pro</h3>
+                    <p class="projetos-descricao">
+                        <strong>Gerenciamento de EPIs nas Empresas</strong>
+
+                        O Safe Guard Pro é um aplicativo desenvolvido para facilitar o controle e a gestão de
+                        Equipamentos
+                        de Proteção Individual (EPIs) em ambientes corporativos. A solução permite que empresas
+                        registrem,
+                        acompanhem e gerenciem a distribuição, validade e uso dos EPIs de forma eficiente e
+                        centralizada. O
+                        app contribui para o cumprimento das normas de segurança do trabalho, reduz riscos operacionais
+                        e
+                        garante maior organização no fornecimento dos equipamentos aos colaboradores.
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+                    alt="Projeto 1" class="projetos-imagem">
+                <div class="textos-projeto">
+                    <h3 class="projetos-info">Voz Urbana</h3>
+                    <p class="projetos-descricao">
+                        <strong>Aplicativo e Plataforma Web para Conexão Cívica da População</strong>
+
+                        Projeto de desenvolvimento de um aplicativo móvel e uma página web com o objetivo de conectar os
+                        cidadãos de uma cidade, estado ou país, permitindo que relatem problemas locais, proponham
+                        melhorias
+                        e iniciem petições ou abaixo-assinados. A plataforma visa fortalecer a participação popular na
+                        gestão pública, promovendo transparência, engajamento cívico e colaboração entre a população e
+                        os
+                        órgãos responsáveis pela administração da região.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
+            <div class="groupo-form">
+                <input class="campo-form" type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="groupo-form">
+                <textarea class="campo-form" id="mensagem" name="mensagem" placeholder="Digite sua mensagem"
+                    required></textarea>
+            </div>
+
+            <div class="groupo-form">
+                <button class="botao-form" type="submit">Enviar por Whatszapp</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
