@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 
 html {
@@ -12,6 +13,7 @@ html {
 :root {
     --primaria: #ff7300;
     --secundaria: #008cff;
+    --secundaria-rgb: 0, 140, 255;
     --escuro: #0f172a;
     --maisEscuro: #0a0f1c;
 
@@ -52,11 +54,11 @@ body {
 .menu-link::after {
     content: '';
     height: 2px;
-    width: 0;
-    position: absolute;
-    bottom: 0;
     left: 0;
-    background-color: var(--primaria);
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
     transition: width .3s ease;
 }
 
@@ -79,7 +81,7 @@ body {
 .foto-pefil{
     width: 350px;
     height: 350px;
-    box-shadow: 0 0 20px rgba(79, 70, 229, .3);
+    box-shadow: 0 10px 10px rgba(var(--secundaria-rgb), .5);
     border-radius: 50%;
     border: 4px solid var(--vidro);
 }
@@ -155,7 +157,7 @@ body {
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 10px rgba(79, 70, 229, .2);
+    box-shadow: 0 10px 10px rgba(var(--secundaria-rgb), .5);
     transform: translateY(-10px) scale(1.02);
 }
 
@@ -174,8 +176,22 @@ body {
     line-height: 1.25rem;
     margin-bottom: 5px;
 }
-.projetos-descricao {
 
+.githubLink {
+    color: var(--claro);
+    background: var(--primaria);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 100%;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+
+.githubLink:hover {
+    transform: translateY(-4px) scale(1.02);
 }
 
 /* contato */
@@ -222,7 +238,7 @@ body {
 
 .botao-form {
     color: var(--claro);
-    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    background: var(--primaria);
     padding: 1rem 2rem;
     border: none;
     border-radius: .5rem;
@@ -233,6 +249,11 @@ body {
 }
 
 .botao-form:hover {
-    box-shadow: 0 10px 10px rgba(79, 70, 229, .4);
     transform: translateY(-4px) scale(1.02);
+}
+
+.contatos {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 10px;
 }
