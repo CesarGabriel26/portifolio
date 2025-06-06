@@ -131,7 +131,7 @@ body {
 /* meus projetos */
 
 .projetos {
-    padding: 6rem, 2rem;
+    padding: 6rem 2rem;
 }
 .projetos-titulo {
     text-align: center;
@@ -179,9 +179,10 @@ body {
 
 
 .githubLinkBox {
-    margin: 0 auto;
+    display: flex;
     max-width: 1200px;
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .githubLink {
@@ -192,7 +193,6 @@ body {
     border-radius: .5rem;
     cursor: pointer;
     font-weight: bolder;
-    width: 100%;
     transition: all .5s ease;
     text-decoration: none;
 }
